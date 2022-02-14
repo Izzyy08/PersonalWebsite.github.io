@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Personal Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script src="http://code.jquery.com/jquery.min.js"></script>
+         <link rel="stylesheet" href="style.css" type="text/css" media="screen,projection"/>
+    </head>
+    <body>
+        <div id="container" style=" padding:20px; " > <!-- for whole website -->
+            
+            
+            <div id="slide">
+                
+            <div class="pic fade">
+                <img src="Images\main.png" ></div>
+            <div class="pic fade">
+                <img src="Images\main2.png"></div>
+            <div class="pic fade">
+                <img src="Images\main3.png"></div>
+            <div class="pic fade">
+                <img src="Images\main4.png"></div>
+                
+           
+        <div id="line">
+            <br>
+            <span class="dot" onclick="currentSlide(1)" style="display:inline-block"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            </br>
+        </div>
+                <div id="nameintro" >
+                <h3 >Hi, I'm</h3>
+                <h1><u>Nur Izzaty!</u></h1>
+                <h4>Let's get to know me!</h4>
+                
+            </div>
+            </div><!-- slideshow images -->
+            
+            <div id='sentences'>
+                <p>My name is Nur Izzaty and I was born on 29th August 2000. 
+                    I am identified as female and currently at the age where I have no idea what I am going to do in the future. 
+                    However at the moment, I am taking a degree in Multimedia Computing, and this personal website is one of the requirement assessment for one of the subject related to the course.
+                    In the present time I am living with my mother until I manage to finish my study, until the I will decide on what I am going to do later on.
+                    Just like most late teenagers like my age, I have preference on things in daily life. Thus the personal website will be a suitable place for me to share them.
+                    
+                </p>
+
+            </div>
+                            
+                
+                <div id='icons'>
+                <div id='icon'>
+                    
+                    <a  href="MyCats.html"><img  onmouseover="big(this)" onmouseout="normal(this)" src="Images/pet.png" alt="alt" style="width:170px; height:170px; display:inline-block; margin-left: 5%;margin-top: 0%;justify-content: center;"/></a>
+                    <div class="AboutCats"> Get to know my sweet and mischievous cat, Rentung. A black cat, with eyes full of wonder, none can go wrong by loving this precious soul. One may even need to prepare their heart for the fluff attack. </div>     
+                </div>    
+            
+            <div id='icon1'>
+                    <a  href="MyFavFood.html"><img  onmouseover="big(this)" onmouseout="normal(this)" src="Images/food.png" alt="alt" style="width:170px; height:170px; display:inline-block; margin-left: 5%;margin-top: 0%;justify-content: center;"/></a>
+                    <div class="favfood">One may eat to keep living while some live in order to eat. Nur Izzaty does not belong to neither side, however food in general have a lot of variety itself. Get to know Nur Izzaty's favorite dish and comfort food.</div>
+            </div>
+                         <div id='icon'>       
+                    <a  href="MyFriends.html"><img  onmouseover="big(this)" onmouseout="normal(this)" src="Images/friend.png" alt="alt" style="width:170px; height:170px; display:inline-block; margin-left: 5%;margin-top: 0%;justify-content: center;"/></a>
+                    <div class='myfriends'>Nur Izzaty is an introvert and also shy to some extend. Thus, it is not suprising for her to have trouble in creating friends. However, Nur Izzaty managed to get herself few close friends that she held dearly.</div>
+                         </div></div>
+            <script>
+function big(x) {
+  x.style.height = "200px";
+  x.style.width = "200px";
+}
+
+function normal(x) {
+  x.style.height = "170px";
+  x.style.width = "170px";
+}
+</script>
+
+        <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("pic");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+  }
+  slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000);
+}
+</script>
+        
+    </body>
+</html>

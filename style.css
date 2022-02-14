@@ -1,0 +1,209 @@
+.pic {display: none}
+img {vertical-align: middle;}
+#line{
+	padding:0px;
+	margin-top:0px;
+	text-align:center;
+}
+.pic{
+	width:100%;
+	height:500px;
+	overflow:hidden;
+        border-radius: 20px;
+}
+.pic img{
+	width:100%;
+	height:500px;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin:0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-image 0.2s ease;
+  
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+h1{
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 100px;
+    padding-top: 40px;
+    bottom: 0;
+    left: 5px;
+    box-sizing: border-box;
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    top: 200px;
+    font-size: 80px;
+}
+
+ h3
+{
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 100px;
+    padding-top: 10px;
+    bottom: 0;
+    left: 5px;
+    box-sizing: border-box;
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    top: 200px;
+    font-size: 30px;
+}
+
+h4
+{
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 308px;
+    padding-top: 140px;
+    bottom: 0;
+    left: 5px;
+    box-sizing: border-box;
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    top: 200px;
+    font-size: 20px;}
+.AboutCats{
+      text-align: justify;
+  text-justify: inter-word;
+   
+  padding: 20px; 
+  margin-top: 2%;
+  margin-bottom: auto;
+  width: 450px;
+ height:200px;
+  display:inline-block;
+  border-radius: 20px;
+  position: absolute;
+  right: 150px; 
+  overflow: auto;
+  font-size: 20px;
+  font-family: garamond,rockwell, baskerville;
+}
+
+.favfood{text-align: justify;
+  text-justify: inter-word;
+   
+  padding: 20px; 
+  margin-top: 2%;
+  margin-bottom: auto;
+  width: 450px;
+ height:200px;
+  display:inline-block;
+  border-radius: 20px;
+  position: absolute;
+  right: 150px; 
+  overflow: auto;
+  font-size: 20px;
+  font-family: garamond,rockwell, baskerville;
+}
+
+.myfriends{text-align: justify;
+  text-justify: inter-word;
+   
+  padding: 20px; 
+  margin-top: 2%;
+  margin-bottom: auto;
+  width: 450px;
+ height:200px;
+  display:inline-block;
+  border-radius: 20px;
+  position: absolute;
+  right: 150px; 
+  overflow: auto;
+  font-size: 20px;
+  font-family: garamond,rockwell, baskerville;
+}
+
+#sentences{
+  text-align: justify;
+  text-justify: inter-word;
+   border: 5px inset #bc604a;
+  padding: 20px; 
+  margin-top: 5px;
+  width: 300px;
+ height:350px;
+  text-indent: 30px;
+  display:inline-block;
+  border-radius: 20px;
+  border-style: double;
+  font-size: 16px;
+  font-family: garamond, rockwell, baskerville;
+}
+#icons{
+    padding: 10px;
+   display:inline-block; 
+   margin:5px;
+   margin-bottom: 5px; 
+   float:right; 
+   position:absolute-right;
+   width:70%;
+   margin-right: 0;
+   border:5px solid #f3b597;
+}
+#icon{
+   border:5px inset #f3b597;
+   border-radius: 20px;
+   padding: 10px;
+   display:inline-block; 
+   margin:5px;
+   margin-bottom: 5px; 
+   float:right; 
+   position:absolute-right;
+   width:96%;
+   
+  height:200px;
+  border-style: dotted;
+}
+
+#icon1{
+   border:5px solid #bc604a;
+   border-radius: 20px;
+   padding: 10px;
+   display:inline-block; 
+   margin:5px;
+   margin-bottom: 5px; 
+   float:right; 
+   position:absolute-right;
+   width:96%;
+   
+  height:200px;
+ 
+}
